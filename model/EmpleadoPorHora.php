@@ -13,7 +13,7 @@ use interfaces\IComparar;
  */
 class EmpleadoPorHora extends Empleado implements IComparar {
 
-    //put your code here
+
 
     CONST HORA_POR_DEFECTO = 25;
 
@@ -59,5 +59,7 @@ class EmpleadoPorHora extends Empleado implements IComparar {
             throw new NotSuitableClassException(get_class($object));
         }
     }
+    
+    
 
 }

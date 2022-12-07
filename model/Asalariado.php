@@ -18,7 +18,7 @@ class Asalariado extends Empleado{
     
     private float $salarioAnual;
     
-    public function __construct( string $nombre, string $apellido, string $nss, float $salarioAnual,  float $porcentaje=0) {
+    public function __construct( string $nombre, string $apellido, string $nss, float $salarioAnual,  float $porcentaje= Empleado::DEFAULT_PORCENTAJE) {
         parent::__construct($nombre, $apellido, $nss, $porcentaje);
         $this->salarioAnual = $salarioAnual;
         
